@@ -5,7 +5,7 @@ This workflow automates the process of posting news articles from an RSS feed to
 ## Features
 - Fetches news from RSS feed
 - Sends news URL and date to Telegram for approval
-- Allows user to approve/reject news via Telegram
+- Allows the user to approve/reject news via Telegram
 - Posts approved news to Facebook with image and caption
 - Fully automated with n8n workflow
 
@@ -25,4 +25,42 @@ The workflow JSON file: `facebook_publish.json`
    - Fetch latest news from the RSS feed.
    - Send each item to Telegram for approval/rejection.
    - Post approved items to Facebook with image and caption.
+  
+
+### Telegram Approval Flow
+Example notification with approve/reject option:
+
+<img width="607" height="1350" alt="image" src="https://github.com/user-attachments/assets/68157bd8-f331-4f27-8952-af83916300fa" />
+Check the latest notification from Animebot chat, it's about "ansatsusha de aru ore no status ga" anime
+
+<img width="607" height="1350" alt="image" src="https://github.com/user-attachments/assets/e54e741d-7f61-4bc5-b32a-4cfae08139f1" />
+Click on the link provided by the bot to check out news from the RSS feed source directly
+
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/b338dc1c-5cd7-4df9-a161-42f3b7679735" />
+The provided image is the source of the news 
+
+<img width="607" height="1350" alt="image" src="https://github.com/user-attachments/assets/f4debc99-eb01-424e-a824-3a303c5d8cb5" />
+Go back to the bot and approve the news article, click open 
+
+<img width="608" height="1350" alt="image" src="https://github.com/user-attachments/assets/8ef720ab-70d4-490a-84b8-e8a267e71227" />
+Acknowledgment for the approved news by the n8n webhook is provided 
+
+<img width="607" height="1350" alt="image" src="https://github.com/user-attachments/assets/c37d51e3-bd6f-422a-bb79-7ca1af4567d9" />
+The next news article to approve or reject has appeared on chat
+
+### Facebook Post
+Example of approved news published to Facebook:
+
+<img width="607" height="1350" alt="image" src="https://github.com/user-attachments/assets/3900e054-86d6-4748-aaa3-d2c579586279" />
+This is my page on Facebook
+
+<img width="607" height="1350" alt="image" src="https://github.com/user-attachments/assets/f0673909-81e8-462c-ae4c-1909ef9578ba" />
+The approved news article has been successfully published on page
+
+
+
+
+
+
+
 
